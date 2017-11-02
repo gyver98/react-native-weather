@@ -10,7 +10,7 @@ export default class Weather extends Component {
         style={styles.container}>
         <View style={styles.upper}>
           <Text>Icon here</Text>
-          <Text>Temp here</Text>
+          <Text style={styles.temp}>36</Text>
         </View>
         <View style={styles.lower}>
           <Text style={styles.title}>heavy raining</Text>
@@ -28,6 +28,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center"
+  },
+  temp: {
+    fontSize: 48,
+    backgroundColor: "transparent",
+    color: "white",
+    marginTop: 10
   },
   lower: {
     flex: 1,
